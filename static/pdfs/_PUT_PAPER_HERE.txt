@@ -1,0 +1,1 @@
+Put your paper PDF here, e.g. agile.pdf, then point the "Paper" button to static/pdfs/agile.pdf

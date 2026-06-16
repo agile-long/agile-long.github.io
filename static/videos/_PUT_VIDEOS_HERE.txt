@@ -1,0 +1,2 @@
+Drop rollout / teaser videos here.
+  teaser.mp4 - keep under ~10 MB for fast first load (H.264, muted, looping)
