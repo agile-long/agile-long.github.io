@@ -168,3 +168,42 @@ a:focus-visible,
   .publication-subtitle { font-size: 1.3rem !important; }
   .author-block { display: inline-block; }
 }
+
+/* ---------- Added: note / contributions / acknowledgements ---------- */
+.publication-note {
+  color: var(--muted);
+  margin-top: 0.4rem;
+}
+
+.contributions-section { background: #f3f1ec; }
+
+.contrib-list { list-style: none; margin-left: 0; }
+.contrib-list li {
+  position: relative;
+  padding-left: 1.6rem;
+  margin-bottom: 0.9rem;
+  line-height: 1.55;
+}
+.contrib-list li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0.55em;
+  width: 9px; height: 9px;
+  background: var(--coral);
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
+
+.ack-section { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.ack-text { color: var(--muted); font-size: 0.85rem; max-width: 820px; margin: 0 auto; }
+
+/* ---------- Real-world demo video ---------- */
+.demo-video {
+  display: block;
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto 0.8rem;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(15, 27, 45, 0.16);
+  background: #000;
+}

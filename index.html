@@ -4,20 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- ============ EDIT META: title / description / og image ============ -->
-  <title>AGiLe: Affordance-Grounded Bidirectional Latent Planning for Long-Horizon Manipulation</title>
+  <title>AGiLe: Learning Robust Long-Horizon Manipulation via Affordance-Grounded Bidirectional Latent Planning</title>
   <meta name="description"
-        content="AGiLe: Affordance-Grounded Bidirectional Latent Planning for Long-Horizon Manipulation. CVPR 2026.">
+        content="AGiLe (CVPR 2026): a unified framework that pairs bidirectional latent planning with affordance grounding for robust long-horizon manipulation.">
   <meta property="og:title" content="AGiLe (CVPR 2026)"/>
-  <meta property="og:description" content="Affordance-Grounded Bidirectional Latent Planning for Long-Horizon Manipulation."/>
+  <meta property="og:description" content="Robust long-horizon manipulation via affordance-grounded bidirectional latent planning."/>
   <meta property="og:url" content="https://agile-long.github.io/"/>
-  <!-- 1200x630 recommended. Drop the file in static/images/ and keep this path -->
-  <meta property="og:image" content="static/images/og_banner.png"/>
+  <meta property="og:image" content="static/images/teaser.png"/>
   <meta name="twitter:card" content="summary_large_image"/>
-  <!-- ================================================================== -->
 
   <link rel="icon" href="static/images/favicon.ico">
-
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -34,69 +30,37 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">AGiLe</h1>
           <h2 class="subtitle is-3 publication-subtitle">
-            Affordance-Grounded Bidirectional Latent Planning<br>for Long-Horizon Manipulation
+            Learning Robust Long-Horizon Manipulation via<br>
+            Affordance-Grounded Bidirectional Latent Planning
           </h2>
 
-          <!-- ============ EDIT AUTHORS ============ -->
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://chenzixuan99.github.io" target="_blank">Zixuan Chen</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="#" target="_blank">Co-Author Two</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="#" target="_blank">Co-Author Three</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="#" target="_blank">Jing Huo</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="#" target="_blank">Yang Gao</a><sup>1</sup></span>
+            <span class="author-block">Xiangrong Feng<sup>1</sup>,</span>
+            <span class="author-block">Jieqi Shi<sup>1</sup><sup>&dagger;</sup>,</span>
+            <span class="author-block">Lin Shao<sup>2</sup>,</span>
+            <span class="author-block">Jing Huo<sup>1</sup><sup>&dagger;</sup>,</span>
+            <span class="author-block">Yang Gao<sup>1</sup></span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Nanjing University</span>
-            <span class="author-block"><sup>2</sup>Affiliation Two</span>
+            <span class="author-block"><sup>1</sup>Nanjing University, China</span>
+            <span class="author-block"><sup>2</sup>National University of Singapore, Singapore</span>
           </div>
+          <div class="is-size-7 publication-note"><sup>&dagger;</sup>Corresponding author</div>
 
           <div class="is-size-6 publication-venue">
             <span class="venue-badge">CVPR 2026</span>
           </div>
-          <!-- ====================================== -->
 
-          <!-- ============ EDIT LINK BUTTONS ============ -->
           <div class="publication-links">
-            <!-- Paper -->
             <span class="link-block">
-              <a href="PASTE_PAPER_PDF_URL" target="_blank"
-                 class="external-link button is-rounded is-dark">
-                <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                <span>Paper</span>
-              </a>
-            </span>
-            <!-- arXiv -->
-            <span class="link-block">
-              <a href="https://arxiv.org/abs/PASTE_ARXIV_ID" target="_blank"
-                 class="external-link button is-rounded is-dark">
-                <span class="icon"><i class="ai ai-arxiv"></i></span>
-                <span>arXiv</span>
-              </a>
-            </span>
-            <!-- Code -->
-            <span class="link-block">
-              <a href="https://github.com/agile-long/PASTE_CODE_REPO" target="_blank"
-                 class="external-link button is-rounded is-dark">
-                <span class="icon"><i class="fab fa-github"></i></span>
-                <span>Code</span>
-              </a>
-            </span>
-            <!-- Video -->
-            <span class="link-block">
-              <a href="PASTE_VIDEO_URL" target="_blank"
-                 class="external-link button is-rounded is-dark">
-                <span class="icon"><i class="fab fa-youtube"></i></span>
-                <span>Video</span>
+              <a href="PASTE_PAPER_PDF_URL" target="_blank" class="external-link button is-rounded is-dark">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
               </a>
             </span>
           </div>
-          <!-- =========================================== -->
         </div>
       </div>
     </div>
@@ -107,17 +71,11 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- Replace with a teaser image OR the <video> block below -->
       <img src="static/images/teaser.png" alt="AGiLe teaser" class="teaser-media">
-      <!--
-      <video id="teaser" autoplay muted loop playsinline class="teaser-media">
-        <source src="static/videos/teaser.mp4" type="video/mp4">
-      </video>
-      -->
       <h2 class="subtitle has-text-centered teaser-caption">
-        <span class="agile-name">AGiLe</span> grounds affordances and plans bidirectionally in a latent space
-        to solve long-horizon manipulation tasks.
-        <em>(Replace this caption with your one-line teaser description.)</em>
+        <span class="agile-name">AGiLe</span> achieves both <strong>temporal</strong> and <strong>spatial</strong>
+        robustness by combining bidirectional latent planning with affordance grounding,
+        improving the robustness of long-horizon manipulation.
       </h2>
     </div>
   </div>
@@ -130,20 +88,52 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <!-- ============ REPLACE WITH YOUR FINAL ABSTRACT ============ -->
           <p>
-            Long-horizon manipulation requires an agent to compose many sub-tasks while staying robust
-            to compounding error. We present <strong>AGiLe</strong>, a framework that grounds object
-            affordances and performs <em>bidirectional</em> latent planning: forward rollouts predict
-            reachable states from the current observation, while backward reasoning from the goal
-            constrains the search toward feasible solutions. By aligning these two directions in a shared
-            latent space, AGiLe produces plans that are both goal-consistent and physically grounded.
+            The robust execution of long-horizon manipulation tasks remains a central challenge in
+            embodied intelligence, requiring both coherent high-level planning and reliable low-level
+            control. Existing approaches face two critical limitations: the accumulation of prediction
+            errors in subgoal planning, which compounds deviations over time; and the planning-execution
+            gap, where abstract high-level plans fail to be grounded in the continuous
+            perception-action space. To address these challenges, we propose a unified framework,
+            <strong>A</strong>ffordance-<strong>G</strong>rounded B<strong>i</strong>directional
+            <strong>L</strong>at<strong>e</strong>nt Planning (<strong>AGiLe</strong>).
           </p>
           <p>
-            <em>[Placeholder abstract — replace with the final camera-ready text. Add your headline
-            results and the key quantitative gains here.]</em>
+            AGiLe introduces a bidirectional latent planning mechanism that jointly optimizes a
+            backward planner and a forward critic. The backward planner generates goal-directed subgoals
+            from the final objective, while the forward critic assesses their reachability, ensuring
+            temporal robustness through sustained consistency over long horizons. AGiLe further bridges
+            the planning-execution gap by using affordance as structural guidance, grounding abstract
+            subgoals into dense, pixel-level visual affordances that drive action. This enhances spatial
+            robustness, letting the system adapt to semantic and visual distractors. Across simulation and
+            real-world settings, AGiLe significantly outperforms strong baselines, achieving an
+            <strong>8.5% improvement</strong> over prior state-of-the-art methods.
           </p>
-          <!-- ========================================================== -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== CONTRIBUTIONS =========================== -->
+<section class="section contributions-section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Contributions</h2>
+        <div class="content has-text-left">
+          <ul class="contrib-list">
+            <li><strong>AGiLe framework.</strong> A unified approach integrating bidirectional latent
+              planning (temporal robustness) with affordance grounding (spatial robustness) for robust
+              long-horizon manipulation policies.</li>
+            <li><strong>Bidirectional latent planning.</strong> A mechanism that jointly optimizes a
+              backward planner and a forward critic, ensuring generated subgoals are both goal-directed
+              and goal-reachable.</li>
+            <li><strong>Affordance grounding.</strong> A mechanism that uses abstract plans as structural
+              guidance to purify visual features, bridging high-level planning and low-level control.
+              Extensive simulation and real-world experiments show AGiLe substantially outperforms
+              existing methods.</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -153,31 +143,51 @@
 <!-- =========================== METHOD =========================== -->
 <section class="section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full has-text-centered">
-        <h2 class="title is-3">Method</h2>
-        <img src="static/images/method.png" alt="AGiLe method overview" class="method-figure">
-        <p class="caption">
-          <strong>Overview of AGiLe.</strong>
-          <em>(Replace with your architecture figure and caption.)</em>
-        </p>
-      </div>
+    <div class="column is-full has-text-centered">
+      <h2 class="title is-3">Method</h2>
+      <img src="static/images/method.png" alt="AGiLe overview" class="method-figure">
+      <p class="caption">
+        <strong>Overview of AGiLe.</strong> A backward planner and forward critic produce a temporally
+        consistent subgoal plan in latent space; affordance grounding then translates each abstract
+        subgoal into dense pixel-level cues that drive low-level action.
+      </p>
     </div>
   </div>
 </section>
 
-<!-- =========================== RESULTS =========================== -->
+<!-- =========================== EXPERIMENTS =========================== -->
 <section class="section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full has-text-centered">
-        <h2 class="title is-3">Results</h2>
-        <!-- Add result figures / qualitative video grids here -->
-        <img src="static/images/results.png" alt="AGiLe results" class="method-figure">
-        <p class="caption">
-          <em>(Replace with your quantitative tables and qualitative rollouts.)</em>
-        </p>
-      </div>
+    <div class="column is-full has-text-centered">
+      <h2 class="title is-3">Experiments</h2>
+      <img src="static/images/sim_tasks.png" alt="LIBERO-LONG simulation tasks" class="method-figure">
+      <p class="caption">
+        Evaluated on the <strong>LIBERO-LONG</strong> benchmark (10 long-horizon tasks, 50 demos each)
+        and four real-world <strong>xArm6</strong> tasks of four and six sub-stages.
+      </p>
+      <img src="static/images/results.png" alt="AGiLe real-world results" class="method-figure" style="margin-top:2rem;">
+      <p class="caption">
+        Real-world rollouts. AGiLe maintains stage-level consistency across long multi-step
+        instructions, outperforming the strongest planning baseline (LBP).
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== VIDEO =========================== -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="column is-full has-text-centered">
+      <h2 class="title is-3">Real-World Demo</h2>
+      <video class="demo-video" controls playsinline preload="metadata"
+             poster="static/images/demo_poster.jpg">
+        <source src="static/videos/real_world_demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p class="caption">
+        AGiLe executing long-horizon tasks on a real <strong>xArm6</strong>, planning and grounding
+        each sub-stage from a single language instruction.
+      </p>
     </div>
   </div>
 </section>
@@ -187,23 +197,37 @@
   <div class="container is-max-desktop content">
     <h2 class="title is-3">BibTeX</h2>
     <pre><code>@inproceedings{chen2026agile,
-  title     = {AGiLe: Affordance-Grounded Bidirectional Latent Planning for Long-Horizon Manipulation},
-  author    = {Chen, Zixuan and PASTE_OTHER_AUTHORS and Huo, Jing and Gao, Yang},
-  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {AGiLe: Learning Robust Long-Horizon Manipulation via
+               Affordance-Grounded Bidirectional Latent Planning},
+  author    = {Chen, Zixuan and Feng, Xiangrong and Shi, Jieqi and
+               Shao, Lin and Huo, Jing and Gao, Yang},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision
+               and Pattern Recognition (CVPR)},
   year      = {2026}
 }</code></pre>
   </div>
 </section>
 
-<!-- =========================== FOOTER =========================== -->
+<!-- =========================== ACK / FOOTER =========================== -->
+<section class="section ack-section">
+  <div class="container is-max-desktop content has-text-centered">
+    <p class="ack-text">
+      Supported in part by the New Generation Artificial Intelligence National Science and Technology
+      Major Project (2025ZD0122902), NSFC (62192783, 62276128, 62506153), Jiangsu Science and Technology
+      Major Project (BG2025035), the Fundamental Research Funds for the Central Universities (KG202514),
+      and the Collaborative Innovation Center of Novel Software Technology and Industrialization.
+    </p>
+  </div>
+</section>
+
 <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8 has-text-centered">
         <p>
-          This page is built on the
-          <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>,
-          which itself adapts the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> template.
+          Built on the
+          <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>
+          (which adapts <a href="https://nerfies.github.io" target="_blank">Nerfies</a>).
           Content licensed under
           <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>.
         </p>

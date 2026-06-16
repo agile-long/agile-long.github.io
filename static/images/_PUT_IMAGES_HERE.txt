@@ -1,7 +1,0 @@
-Drop your figures here and keep these filenames (or update index.html):
-  teaser.png    - top banner image (or use static/videos/teaser.mp4)
-  method.png    - architecture / pipeline figure
-  results.png   - quantitative + qualitative results
-  og_banner.png - 1200x630 social preview card
-  favicon.ico   - site icon
-Tip: convert large PNGs to WebP and keep each under ~1-2 MB.
